@@ -1,0 +1,143 @@
+Q: How do I reset my password?
+A: send email to the admin.
+
+Q: What is your return policy?
+A: You can return any product within 30 days of delivery.
+
+Q: How can I track my order?
+A: After your order ships, you will receive a tracking number via email. You can use that to track your order on our website.
+
+Q: How do I contact customer support?
+A: You can email us at support@example.com or call us at (123) 456-7890 from 9am to 5pm, Monday through Friday.
+
+Q: What payment methods do you accept?
+A: We accept Visa, MasterCard, American Express, UPI, and PayPal.
+
+Q: Can I change or cancel my order?
+A: Orders can be changed or canceled within 1 hour of placing them. Please contact support immediately for assistance.
+
+Q: How long does shipping take?
+A: Standard shipping usually takes 3–5 business days. Expedited shipping is available at checkout.
+
+Q: Do you ship internationally?
+A: Yes, we ship to most countries worldwide. International shipping fees and delivery times vary by location.
+
+Q: What should I do if I receive a damaged product?
+A: Please take a photo of the damaged item and contact support within 48 hours of delivery. We’ll arrange a replacement or refund.
+
+Q: Is my personal information safe?
+A: Yes, we use SSL encryption and follow industry best practices to keep your data secure.
+
+Q: How do I update my account information?
+A: Log in to your account, go to 'Account Settings,' and update your personal information as needed.
+
+Q: How can I delete my account?
+A: Please contact support@example.com with your request, and we will assist you in deleting your account.
+
+Q: What should I do if I forgot my username?
+A: Click on 'Forgot Username' on the login screen and follow the instructions to recover your username.
+
+Q: How do I reset my password if I don't have access to my email?
+A: Please contact support@example.com for assistance in resetting your password.
+
+Q: Can I use multiple discount codes on a single order?
+A: Only one discount code can be applied per order.
+
+Q: Do you offer gift cards?
+A: Yes, we offer digital gift cards in various denominations. You can purchase them on our website.
+
+Q: How do I redeem a gift card?
+A: Enter the gift card code at checkout in the 'Gift Card' field.
+
+Q: Can I use a gift card for subscription services?
+A: Gift cards can be used for one-time purchases but not for recurring subscription payments.
+
+Q: How do I subscribe to your newsletter?
+A: Scroll to the bottom of our homepage and enter your email address in the 'Subscribe' field.
+
+Q: How can I unsubscribe from your newsletter?
+A: Click the 'Unsubscribe' link at the bottom of any newsletter email you receive.
+
+Q: Do you offer student discounts?
+A: We offer occasional promotions and discounts. Please check our website or subscribe to our newsletter for updates.
+
+Q: How do I apply a discount code?
+A: Enter the discount code at checkout in the 'Promo Code' field.
+
+Q: Can I change the shipping address after placing an order?
+A: Orders can be updated within 1 hour of placing them. Please contact support immediately for assistance.
+
+Q: How do I know if my order has been shipped?
+A: You will receive a shipping confirmation email with tracking information once your order has shipped.
+
+Q: Can I pick up my order in-store?
+A: Currently, we do not offer in-store pickup. All orders are shipped directly to your address.
+
+Q: Do you offer same-day delivery?
+A: Same-day delivery is available in select areas. Please check at checkout to see if it's available for your location.
+
+Q: How can I check the status of my refund?
+A: Refunds are processed within 5–7 business days. You will receive a confirmation email once your refund has been issued.
+
+Q: What should I do if I haven't received my refund?
+A: Please check your bank or payment provider's processing times. If you still haven't received it, contact support@example.com.
+
+Q: Can I return a digital product?
+A: Digital products are non-refundable unless they are defective or not as described.
+
+Q: How do I report a bug or technical issue?
+A: Please contact support@example.com with details about the issue, and our team will assist you.
+
+Q: How do I update my billing information?
+A: Log in to your account, go to 'Billing Information,' and update your payment details as needed.
+
+Q: How can I upgrade my subscription plan?
+A: Log in to your account, go to 'Subscription Settings,' and select the plan you'd like to upgrade to.
+
+Q: How do I cancel my subscription?
+A: Log in to your account, go to 'Subscription Settings,' and follow the instructions to cancel your subscription.
+
+Q: Can I pause my subscription?
+A: Currently, we do not offer a pause feature. You can cancel your subscription and resubscribe at any time.
+
+Q: How do I redeem a promotional offer?
+A: Enter the promotional code at checkout in the 'Promo Code' field.
+
+Q: Do you offer price matching?
+A: We do not offer price matching at this time.
+
+Q: How do I leave a product review?
+A: After purchasing a product, you will receive an email invitation to leave a review. Alternatively, you can visit the product page on our website.
+
+Q: How can I contact you about a media inquiry?
+A: Please email media@example.com for all media-related inquiries.
+
+Q: How do I apply for a job with your company?
+A: Visit our Careers page on our website to view current job openings and submit your application.
+
+Q: How can I become a reseller or affiliate?
+A: Please email partnerships@example.com for information on our reseller and affiliate programs.
+
+Q: Do you offer wholesale pricing?
+A: Wholesale pricing is available for bulk orders. Please contact sales@example.com for more information.
+
+Q: How do I track my referral rewards?
+A: Log in to your account and go to 'Referral Program' to view your rewards and referral status.
+
+Q: How do I report a fraudulent transaction?
+A: Please contact support@example.com immediately with details of the transaction, and we will investigate the issue.
+
+Q: How do I update my communication preferences?
+A: Log in to your account, go to 'Communication Preferences,' and adjust your settings as needed.
+
+Q: How can I provide feedback about your products or services?
+A: We welcome your feedback! Please email feedback@example.com with your comments or suggestions.
+
+Q: How do I request a product demo?
+A: Please contact sales@example.com to schedule a product demonstration.
+
+Q: How do I access your API?
+A: call manager to get access
+
+Q: How do I report a security vulnerability?
+A: Please email security@example.com with details of the vulnerability, and our team will address it promptly.
