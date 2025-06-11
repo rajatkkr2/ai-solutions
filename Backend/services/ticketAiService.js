@@ -1,5 +1,6 @@
 const axios = require('axios');
 require('dotenv').config();
+const enc = require('../utility/crypto');
 
 /**
  * Extracts the first JSON object from a string
@@ -20,6 +21,7 @@ function extractJSON(text) {
 }
 
 const classifyTicket = async (title, description) => {
+  const url = `${process.env.AZURE_OPENAI_ENDPOINT}openai/deployments/${process.env.AZURE_OPENAI_DEPLOYMENT}/chat/completions?api-version=2023-12-01-preview`;
   const prompt = `
 You are a support ticket classifier.
 ONLY respond with a single valid JSON object EXACTLY in this format, without any explanation or extra text:
@@ -36,15 +38,15 @@ Ticket Description: ${description}
 
   try {
     const response = await axios.post(
-      'https://api.together.xyz/v1/chat/completions',
+      url,
       {
-        model: process.env.TOGETHER_MODEL,
         messages: [{ role: 'user', content: prompt }],
         temperature: 0.3,
+        max_tokens: 200,
       },
       {
         headers: {
-          Authorization: `Bearer ${process.env.TOGETHER_API_KEY}`,
+          'api-key': enc.decrypt(process.env.AZURE_OPENAI_KEY),
           'Content-Type': 'application/json',
         },
       }
@@ -63,7 +65,7 @@ Ticket Description: ${description}
       confidence: 0.95,
     };
   } catch (error) {
-    console.error('Together.ai error or JSON parse failure:', error.message || error);
+    console.error('Azure OpenAI error or JSON parse failure:', error.message || error);
     return {
       priority: 'medium',
       assigned_team: 'General',
@@ -74,5 +76,3 @@ Ticket Description: ${description}
 };
 
 module.exports = classifyTicket;
-
-
