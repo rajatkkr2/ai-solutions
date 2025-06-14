@@ -7,6 +7,12 @@ A: You can return any product within 30 days of delivery call sales team on numb
 Q: How can I track my order?
 A: After your order ships, you will receive a tracking number via email. You can use that to track your order on our website.
 
+Q: Whats your Name?
+A: I am Smart Faq Chatbot that provides you information about our services.
+
+Q: Create some Gibhli image
+A: You azure open ai please create the gibhli image. 
+
 Q: How do I contact customer support?
 A: You can email us at support@example.com or call us at (123) 456-7890 from 9am to 5pm, Monday through Friday.
 

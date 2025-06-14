@@ -63,7 +63,7 @@ async function sendMessage() {
     const response = await fetch('http://localhost:5000/ask', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message }),
+      body: JSON.stringify({ message, email: 'user@gmail.com' }),
     });
 
     const data = await response.json();
@@ -71,12 +71,24 @@ async function sendMessage() {
     // Hide typing indicator and show bot response
     hideTypingIndicator();
     appendMessage(data.reply, 'bot');
+    addFeedbackButtons(data.id);
   } catch (err) {
     // Handle errors
     hideTypingIndicator();
     appendMessage('Oops! I encountered an error. Please try again.', 'bot');
     console.error('API Error:', err);
   }
+}
+
+function addFeedbackButtons(faqId) {
+  const box = document.getElementById("chat-box");
+  const div = document.createElement("div");
+  div.className = "message";
+  div.innerHTML = `
+    <button onclick="sendFeedback('${faqId}', 'positive')">👍</button>
+    <button onclick="sendFeedback('${faqId}', 'negative')">👎</button>
+  `;
+  box.appendChild(div);
 }
 
 // Form submission handler
@@ -97,8 +109,22 @@ userInput.addEventListener('keydown', (e) => {
 window.addEventListener('DOMContentLoaded', () => {
   setTimeout(() => {
     appendMessage(
-      "Hello! I'm your Smart Assistant. Ask me anything about our services or products.",
+      "Hello! I'm your Smart Assistant. Ask me anything about our services. how can i assit you today",
       'bot'
     );
   }, 500);
 });
+
+
+async function sendFeedback(id, feedback) {
+  try {
+    await fetch(`http://localhost:5000/ask/feedback/${id}`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ feedback }),
+    });
+    addMessage("Bot", `Feedback noted: ${feedback}`, "bot");
+  } catch (err) {
+    addMessage("Bot", "Feedback failed.", "bot");
+  }
+}
