@@ -60,7 +60,7 @@ async function sendMessage() {
 
   try {
     // Send to backend
-    const response = await fetch('http://localhost:5000/ask', {
+    const response = await fetch('http://localhost:5000/api/ask', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ message, email: 'user@gmail.com' }),

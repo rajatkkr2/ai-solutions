@@ -4,6 +4,7 @@ require('dotenv').config();
 const enc = require("../utility/crypto");
 
 const faqText = fs.readFileSync('./utility/faq.txt', 'utf-8');
+const faqData = JSON.parse(fs.readFileSync('./utility/faq.json', 'utf-8'));
 
 exports.getBotReply = async (message) => {
   if (!message) {
@@ -24,7 +25,7 @@ Guidelines for your responses:
 - Always maintain a positive, friendly tone that builds customer trust.
 
 FAQ Content:
-${faqText}
+${faqData.map(faq => `Q: ${faq.question}\nA: ${faq.answer}`).join('\n\n')}
 
 User question: ${message}
 
