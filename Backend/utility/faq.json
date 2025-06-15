@@ -1,0 +1,202 @@
+[
+  {
+    "question": "How do I reset my password?",
+    "answer": "Send an email to the admin email ID: itsupport@relam.com."
+  },
+  {
+    "question": "What is your return policy?",
+    "answer": "You can return any product within 30 days of delivery. Call the sales team on number +919876543210."
+  },
+  {
+    "question": "How can I track my order?",
+    "answer": "After your order ships, you will receive a tracking number via email. You can use that to track your order on our website."
+  },
+  {
+    "question": "What's your Name?",
+    "answer": "I am Smart Faq Chatbot that provides you information about our services."
+  },
+  {
+    "question": "Create some Gibhli image",
+    "answer": "You can use Azure OpenAI or other AI tools to create a Ghibli-style image."
+  },
+  {
+    "question": "How do I contact customer support?",
+    "answer": "You can email us at support@example.com or call us at (123) 456-7890 from 9am to 5pm, Monday through Friday."
+  },
+  {
+    "question": "What payment methods do you accept?",
+    "answer": "We accept Visa, MasterCard, American Express, UPI, and PayPal."
+  },
+  {
+    "question": "Can I change or cancel my order?",
+    "answer": "Orders can be changed or canceled within 1 hour of placing them. Please contact support immediately for assistance."
+  },
+  {
+    "question": "How long does shipping take?",
+    "answer": "Standard shipping usually takes 3–5 business days. Expedited shipping is available at checkout."
+  },
+  {
+    "question": "Do you ship internationally?",
+    "answer": "Yes, we ship to most countries worldwide. International shipping fees and delivery times vary by location."
+  },
+  {
+    "question": "What should I do if I receive a damaged product?",
+    "answer": "Please take a photo of the damaged item and contact support within 48 hours of delivery. We’ll arrange a replacement or refund."
+  },
+  {
+    "question": "Is my personal information safe?",
+    "answer": "Yes, we use SSL encryption and follow industry best practices to keep your data secure."
+  },
+  {
+    "question": "How do I update my account information?",
+    "answer": "Log in to your account, go to 'Account Settings,' and update your personal information as needed."
+  },
+  {
+    "question": "How can I delete my account?",
+    "answer": "Please contact support@example.com with your request, and we will assist you in deleting your account."
+  },
+  {
+    "question": "What should I do if I forgot my username?",
+    "answer": "Click on 'Forgot Username' on the login screen and follow the instructions to recover your username."
+  },
+  {
+    "question": "How do I reset my password if I don't have access to my email?",
+    "answer": "Please contact support@example.com for assistance in resetting your password."
+  },
+  {
+    "question": "Can I use multiple discount codes on a single order?",
+    "answer": "Only one discount code can be applied per order."
+  },
+  {
+    "question": "Do you offer gift cards?",
+    "answer": "Yes, we offer digital gift cards in various denominations. You can purchase them on our website."
+  },
+  {
+    "question": "How do I redeem a gift card?",
+    "answer": "Enter the gift card code at checkout in the 'Gift Card' field."
+  },
+  {
+    "question": "Can I use a gift card for subscription services?",
+    "answer": "Gift cards can be used for one-time purchases but not for recurring subscription payments."
+  },
+  {
+    "question": "How do I subscribe to your newsletter?",
+    "answer": "Scroll to the bottom of our homepage and enter your email address in the 'Subscribe' field."
+  },
+  {
+    "question": "How can I unsubscribe from your newsletter?",
+    "answer": "Click the 'Unsubscribe' link at the bottom of any newsletter email you receive."
+  },
+  {
+    "question": "Do you offer student discounts?",
+    "answer": "We offer occasional promotions and discounts. Please check our website or subscribe to our newsletter for updates."
+  },
+  {
+    "question": "How do I apply a discount code?",
+    "answer": "Enter the discount code at checkout in the 'Promo Code' field."
+  },
+  {
+    "question": "Can I change the shipping address after placing an order?",
+    "answer": "Orders can be updated within 1 hour of placing them. Please contact support immediately for assistance."
+  },
+  {
+    "question": "How do I know if my order has been shipped?",
+    "answer": "You will receive a shipping confirmation email with tracking information once your order has shipped."
+  },
+  {
+    "question": "Can I pick up my order in-store?",
+    "answer": "Currently, we do not offer in-store pickup. All orders are shipped directly to your address."
+  },
+  {
+    "question": "Do you offer same-day delivery?",
+    "answer": "Same-day delivery is available in select areas. Please check at checkout to see if it's available for your location."
+  },
+  {
+    "question": "How can I check the status of my refund?",
+    "answer": "Refunds are processed within 5–7 business days. You will receive a confirmation email once your refund has been issued."
+  },
+  {
+    "question": "What should I do if I haven't received my refund?",
+    "answer": "Please check your bank or payment provider's processing times. If you still haven't received it, contact support@example.com."
+  },
+  {
+    "question": "Can I return a digital product?",
+    "answer": "Digital products are non-refundable unless they are defective or not as described."
+  },
+  {
+    "question": "How do I report a bug or technical issue?",
+    "answer": "Please contact support@example.com with details about the issue, and our team will assist you."
+  },
+  {
+    "question": "How do I update my billing information?",
+    "answer": "Log in to your account, go to 'Billing Information,' and update your payment details as needed."
+  },
+  {
+    "question": "How can I upgrade my subscription plan?",
+    "answer": "Log in to your account, go to 'Subscription Settings,' and select the plan you'd like to upgrade to."
+  },
+  {
+    "question": "How do I cancel my subscription?",
+    "answer": "Log in to your account, go to 'Subscription Settings,' and follow the instructions to cancel your subscription."
+  },
+  {
+    "question": "Can I pause my subscription?",
+    "answer": "Currently, we do not offer a pause feature. You can cancel your subscription and resubscribe at any time."
+  },
+  {
+    "question": "How do I redeem a promotional offer?",
+    "answer": "Enter the promotional code at checkout in the 'Promo Code' field."
+  },
+  {
+    "question": "Do you offer price matching?",
+    "answer": "We do not offer price matching at this time."
+  },
+  {
+    "question": "How do I leave a product review?",
+    "answer": "After purchasing a product, you will receive an email invitation to leave a review. Alternatively, you can visit the product page on our website."
+  },
+  {
+    "question": "How can I contact you about a media inquiry?",
+    "answer": "Please email media@example.com for all media-related inquiries."
+  },
+  {
+    "question": "How do I apply for a job with your company?",
+    "answer": "Visit our Careers page on our website to view current job openings and submit your application."
+  },
+  {
+    "question": "How can I become a reseller or affiliate?",
+    "answer": "Please email partnerships@example.com for information on our reseller and affiliate programs."
+  },
+  {
+    "question": "Do you offer wholesale pricing?",
+    "answer": "Wholesale pricing is available for bulk orders. Please contact sales@example.com for more information."
+  },
+  {
+    "question": "How do I track my referral rewards?",
+    "answer": "Log in to your account and go to 'Referral Program' to view your rewards and referral status."
+  },
+  {
+    "question": "How do I report a fraudulent transaction?",
+    "answer": "Please contact support@example.com immediately with details of the transaction, and we will investigate the issue."
+  },
+  {
+    "question": "How do I update my communication preferences?",
+    "answer": "Log in to your account, go to 'Communication Preferences,' and adjust your settings as needed."
+  },
+  {
+    "question": "How can I provide feedback about your products or services?",
+    "answer": "We welcome your feedback! Please email feedback@example.com with your comments or suggestions."
+  },
+  {
+    "question": "How do I request a product demo?",
+    "answer": "Please contact sales@example.com to schedule a product demonstration."
+  },
+  {
+    "question": "How do I access your API?",
+    "answer": "Call manager to get access."
+  },
+  {
+    "question": "How do I report a security vulnerability?",
+    "answer": "Please email security@example.com with details of the vulnerability, and our team will address it promptly."
+  }
+]
