@@ -79,7 +79,7 @@ exports.getSummary = async (req, res) => {
       return res.status(400).json({ error: 'Email address is required' });
     }
 
-    const insights = await VoiceInsights.find({ email });
+    const insights = await VoiceInsights.find({ email }).sort({ createdAt: -1 });
     if (insights.length === 0) {
       return res.status(404).json({ error: 'No insights found for this email' });
     }

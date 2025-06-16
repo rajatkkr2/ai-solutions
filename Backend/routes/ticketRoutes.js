@@ -1,8 +1,9 @@
 const express = require('express');
 const router = express.Router();
 
-const { createTicket } = require('../controllers/ticketController');
+const { createTicket, getAllTickets } = require('../controllers/ticketController');
 
 router.post('/', createTicket);
+router.post('/getAllTickets', getAllTickets);
 
 module.exports = router;

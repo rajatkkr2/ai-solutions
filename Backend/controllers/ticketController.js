@@ -32,6 +32,15 @@ const createTicket = async (req, res) => {
   }
 };
 
+function getAllTickets(req, res) {
+  Ticket.find()
+    .then(tickets => res.status(200).json(tickets))
+    .catch(err => {
+      console.error('Error fetching tickets:', err);
+      res.status(500).json({ message: 'Server error' });
+    });
+}
+
 module.exports = {
-  createTicket,
+  createTicket, getAllTickets
 };
