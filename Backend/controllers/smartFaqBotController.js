@@ -43,7 +43,7 @@ exports.getFaqsbyemail = async (req, res) => {
   try {
     let email = req?.body?.email;
     let query = email ? { user_email: email } : {};
-    const faqs = await Faq.find(query).sort({ createdAt: -1 });
+    const faqs = await Faq.find(query).sort({ createdAt: 1 });
     res.json(faqs);
   } catch (err) {
     console.error(err);
