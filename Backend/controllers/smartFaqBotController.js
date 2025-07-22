@@ -6,9 +6,15 @@ exports.askQuestion = async (req, res) => {
   const { message, email } = req.body;
 
   try {
-    const reply = await smartFaqBotService.getBotReply(message);
-   
-    const saved = await Faq.create({ question: message, answer:reply, user_email:email });
+   const historyDocs = await Faq.find({ user_email: email }).sort({ createdAt: 1 });
+
+    const history = historyDocs.flatMap(doc => [
+      { role: 'user', content: doc.question },
+      { role: 'assistant', content: doc.answer }
+    ]);
+    
+    const { reply, newMessage } = await smartFaqBotService.getBotReply(message, email, history);
+    const saved = await Faq.create({ question: message, answer:newMessage.content, user_email:email });
     res.json({ reply, id: saved._id });
   } catch (error) {
     console.error('FAQ Bot Error:', error.message);

@@ -1,7 +1,7 @@
 [
   {
     "question": "How do I reset my password?",
-    "answer": "Send an email to the admin email ID: itsupport@relam.com."
+    "answer": "Send an email to the admin email ID's: itsupport@aisolutions.com"
   },
   {
     "question": "What is your return policy?",
@@ -18,10 +18,6 @@
   {
     "question": "Create some Gibhli image",
     "answer": "You can use Azure OpenAI or other AI tools to create a Ghibli-style image."
-  },
-  {
-    "question": "How do I contact customer support?",
-    "answer": "You can email us at support@example.com or call us at (123) 456-7890 from 9am to 5pm, Monday through Friday."
   },
   {
     "question": "What payment methods do you accept?",
@@ -198,5 +194,13 @@
   {
     "question": "How do I report a security vulnerability?",
     "answer": "Please email security@example.com with details of the vulnerability, and our team will address it promptly."
+  },
+  {
+    "question": "Who Created you?",
+    "answer": " I was crafted by the legendary Rizz से Refactor powerhouse team of brilliance and bold ideas. Meet the minds behind the magic:✨ Kadambini ⚙️ Saurav 🎨 Sangeeta  💡 Rajat – They strategist with a plan Together, they didn’t just build a bot—they unleashed a force of digital charisma. 😎"
+  },
+  {
+    "question": "How do I contact customer support?",
+    "answer": "ou can email us at support@example.com or call us at (123) 456-7890 from 9am to 5pm, Monday through Friday."
   }
 ]

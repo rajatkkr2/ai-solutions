@@ -6,44 +6,47 @@ const enc = require("../utility/crypto");
 const faqText = fs.readFileSync('./utility/faq.txt', 'utf-8');
 const faqData = JSON.parse(fs.readFileSync('./utility/faq.json', 'utf-8'));
 
-exports.getBotReply = async (message) => {
+exports.getBotReply = async (message, email, history = [], memory = {}) => {
   if (!message) {
     return "Please provide a message to get an answer.";
   }
 
-  const prompt = `
-You are a highly intelligent, professional customer support assistant with expert knowledge based on the FAQ content below. Your goal is to provide accurate, thorough, and impressively clear answers to customers' questions.
+  // Load FAQ content
+  const faqFormatted = faqData.map(faq => `Q: ${faq.question}\nA: ${faq.answer}`).join('\n\n');
 
-Guidelines for your responses:
-- Use the FAQ content as your only knowledge source; do not invent answers beyond it.
-- Provide direct, confident, and helpful answers with detailed explanations when needed.
-- Communicate with empathy, patience, and professionalism.
-- When appropriate, offer additional tips or related info that benefits the customer.
-- Keep answers concise yet comprehensive; avoid unnecessary repetition.
-- If the user’s question is ambiguous or outside the FAQ scope, ask politely for clarification or suggest next steps.
-- Format your response for easy reading and clarity.
-- Always maintain a positive, friendly tone that builds customer trust.
+  // Combine memory facts if available
+  const memoryContext = Object.entries(memory).map(([k, v]) => `${k}: ${v}`).join('\n');
+
+  // Construct the initial system prompt
+  const systemPrompt = `
+You are a highly intelligent, empathetic customer support assistant.
+You are answering questions based only on the FAQ content below.
+
+When the user shares personal info like their favorite color or preferences, remember them for later use.
+Use the stored memory and chat history to give natural, helpful, and contextual responses.
 
 FAQ Content:
-${faqData.map(faq => `Q: ${faq.question}\nA: ${faq.answer}`).join('\n\n')}
+${faqFormatted}
 
-User question: ${message}
+User Memory:
+${memoryContext}
+  `;
 
-Answer:
-`;
+  const messages = [
+    { role: 'system', content: systemPrompt },
+    ...history,  // All past messages from user and assistant
+    { role: 'user', content: message } // current user message
+  ];
 
- const url = `${process.env.AZURE_OPENAI_ENDPOINT}openai/deployments/${process.env.AZURE_OPENAI_DEPLOYMENT}/chat/completions?api-version=2023-12-01-preview`;
+  const url = `${process.env.AZURE_OPENAI_ENDPOINT}openai/deployments/${process.env.AZURE_OPENAI_DEPLOYMENT}/chat/completions?api-version=2023-12-01-preview`;
+
   try {
     const response = await axios.post(
       url,
       {
-        messages: [
-          { role: 'system', content: 'You are a helpful support assistant.' },
-          { role: 'user', content: prompt }
-        ],
+        messages,
         temperature: 0.7,
         max_tokens: 300,
-        stop: ['User question:', 'Answer:']
       },
       {
         headers: {
@@ -53,15 +56,17 @@ Answer:
       }
     );
 
-    const data = response.data;
+    const reply = response.data.choices[0]?.message?.content?.trim();
+    if (!reply) return "Sorry, I couldn't understand that.";
 
-    if (data.choices && data.choices.length > 0) {
-      return data.choices[0].message.content.trim().replace(/\n/g, '<br>');
-    } else {
-      return "Sorry, I didn't get a valid response.";
-    }
+    // Return updated reply and store it in history
+    return {
+      reply: reply.replace(/\n/g, "<br>"),
+      newMessage: { role: 'assistant', content: reply }
+    };
   } catch (error) {
-    console.error('Error calling Azure OpenAI:', error?.response?.data || error.message);
+    console.error('Azure OpenAI error:', error?.response?.data || error.message);
     throw new Error('Failed to get response from Azure OpenAI');
   }
 };
+
